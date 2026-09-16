@@ -1,9 +1,11 @@
-@for (item of student; track $index) {
-  <p> <strong>Nome:</strong> {{item.name}} -
+@for (item of students; track $index) {
+  <p [ngStyle]="{'backgroundColor': item.gender == 'F' ? 'pink' : 'lightblue'}">
+    {{$index + 1}}) <strong>Nome:</strong> {{item.name}} -
     <strong>Città:</strong> {{item.city}} -
     <strong>Genere:</strong> {{item.gender}} -
     <strong>Presente:</strong> {{item.presente}}
   </p>
 }
+
 
 
