@@ -9,6 +9,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './student.html',
 })
 export class Student {
+
+  M_COLOR="lightblue";
+  F_color="pink"
   // student: any ={ //Any si usa per quando non si conosce il tipo di dato che si andrà a gestire.  
   //   name: "Pippo",
   //   city: "Topolinia",
